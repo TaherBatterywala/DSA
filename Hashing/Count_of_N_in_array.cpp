@@ -24,6 +24,7 @@ int main (){
         int number;
         cout<<"Enter the number you want count of -";
         cin>>number;
+        
         //fetch
         cout<<"It appeares this many times -"<<hash[number]<<endl;
     }
