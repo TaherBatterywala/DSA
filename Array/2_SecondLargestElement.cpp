@@ -16,19 +16,13 @@ int main(){
     }
     cout<<endl;
     int max = arr[0];
-    int Smax = 0;
+    int Smax = -1;
     cout<<"Largest Element of the Array is - ";
     for(int i =0; i<n; i++){
         if(arr[i]>max){
+            int temp = max;
             max = arr[i];
-        }
-        if(arr[i] > Smax && arr[i] < max){
-            Smax = arr[i];
-        }
-    }
-     for(int i =0; i<n; i++){
-        if(arr[i] > Smax && arr[i] < max){
-            Smax = arr[i];
+            Smax = temp;
         }
     }
     cout<<max<<endl;
