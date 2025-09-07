@@ -22,11 +22,11 @@ int main(){
             i++;
         }
     }
-    cout << "Modified array with unique elements - ";
-    for(int k = 0; k <= i; k++){
-        cout << arr[k] << " ";
+    cout<<"Modified array with unique elements - ";
+    for(int k=0; k<=i; k++){
+        cout<<arr[k]<<" ";
     }
-    cout << endl;
+    cout<<endl;
     cout<<"Number of Unique Element in array -";
     cout<<i+1;
 }
