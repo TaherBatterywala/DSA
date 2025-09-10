@@ -1,4 +1,4 @@
-// only Positive values 
+// Both Positive and Negative
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
@@ -6,7 +6,7 @@ int main(){
     cout<<"Enter the length of an Array - ";
     cin>>n;
     int arr[n];
-    cout<<"Enter the elements of an Array (All Positive) - ";
+    cout<<"Enter the elements of an Array (Positive and Negative) - ";
     for(int i=0; i<n; i++){
         cin>>arr[i];
     }
