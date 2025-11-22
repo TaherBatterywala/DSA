@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-#include<bits/stdc++.h>
-using namespace std;
 int main(){
     int n;
     cout<<"Enter the length of an Array - ";
@@ -23,7 +21,7 @@ int main(){
     int high = n-1;
     int ans = -1;
     while(low<=high){
-        int mid = (low+high)/2;
+        int mid = (high+low)/2;
         if(arr[mid]==k){
             ans = arr[mid];
             break;
