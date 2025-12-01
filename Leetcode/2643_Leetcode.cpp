@@ -3,22 +3,15 @@ using namespace std;
 class Solution {
 public:
     vector<int> rowAndMaximumOnes(vector<vector<int>>& mat) {
-        int n=mat[0].size();
-        int ans=0;
-       
-        int index=0;
-        for(int i=0;i<mat.size();i++){
-             int count=0;
-
-            for(int j=0;j<n;j++){
-                if(mat[i][j]==1)
-                count++;
-            }
-            if(count>ans){
-                ans=count;
-                index=i;
+        std::vector<int> res = {0, 0};
+        int row = mat.size();
+        for (int i = 0; i < row; i++){
+            int count = std::accumulate(mat[i].begin(), mat[i].end(), 0);
+            if (count > res[1]){
+                res[0] = i;
+                res[1] = count;
             }
         }
-        return {index,ans};
+        return res;
     }
 };
